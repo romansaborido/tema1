@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
+		
 		//creamos el scanner
 		Scanner reader = new Scanner(System.in);
 		
-		//creamos las variables
+		//creamos las variables de los números que va a introducir el usuario y de las distintas operaciones
 		int num1;
 		int num2;
 		int suma;
@@ -17,24 +18,27 @@ public class Ejercicio6 {
 		int multiplicacion;
 		
 		//pedimos que introduzca el numero 1 al usuario 
-		System.out.println("Introduzca un número");
+		System.out.println("Introduzca un número entero");
 		num1 = reader.nextInt();
 		
 		//pedimos que introduzca el numero 2 al usuario
-		System.out.println("Introduzca otro número");
+		System.out.println("Introduzca otro número entero");
 		num2 = reader.nextInt();
 		
 		//definimos las variables de las operaciones
 		suma = num1 + num2;
 		resta = num1 - num2;
-		division = num1 / num2;
+		division = (num1 / num2);
 		multiplicacion = num1 * num2;
 		
 		//mostramos al usuario la suma 
 		System.out.println("La suma de los números es "+suma+"");
 		System.out.println("La resta de los números es "+resta+"");
-		System.out.println("La división de los números es "+resta+"");
+		System.out.println("La división de los números es "+division+"");
 		System.out.println("La multiplicación de los números es "+multiplicacion+"");
+		
+		//cerramos el scanner
+		reader.close();
 		
 		
 	}

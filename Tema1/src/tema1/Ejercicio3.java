@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
+		
 		//creamos el scanner 
 		Scanner reader = new Scanner(System.in);
 		
-		//creamos la variable del año actual y la del año de nacimiento
+		//creamos la variable del año actual, la del año de nacimiento y la de su edad actual
 		int añoact;
 		int añonac;
+		int edad;
 		
 		//pedimos al usuario el año actual 
 		System.out.println("Introduzca el año en el que estamos");
@@ -21,7 +23,7 @@ public class Ejercicio3 {
 		añonac = reader.nextInt();
 		
 		//creamos la variable de su edad actual
-		int edad = añoact - añonac;
+		edad = añoact - añonac;
 		
 		//mostramos la edad
 		System.out.println("Tienes "+edad+" años");
