@@ -11,17 +11,17 @@ public class Ejercicio2 {
 		
 		//creamos la variable de la edad y la del próximo año
 		int edad;
-		int edadproxima;
+		int edadProxima;
 		
 		//pedimos la edad al usuario
 		System.out.println("Introduzca su edad");
 		edad = reader.nextInt();
 		
 		//definimos la variable edadproxima sumando un año más
-		edadproxima = ++edad;
+		edadProxima = ++edad;
 		
 		//mostramos al usuario la edad que tendrá el próximo año
-		System.out.println("El próximo año tendrás "+edadproxima+" años");
+		System.out.println("El próximo año tendrás "+edadProxima+" años");
 		
 		//cerramos el scanner
 		reader.close();

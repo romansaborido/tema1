@@ -10,21 +10,21 @@ public class Ejercicio15 {
 		Scanner reader = new Scanner(System.in);
 		
 		//creamos la constante iva
-		final int iva = 21;
+		final int IVA	 = 21;
 		
 		//creamos la variable precio y precioconiva
 		double precio;
-		double precioconiva;
+		double precioConIva;
 		
 		//pedimos al usuario que nos de un precio
 		System.out.println("Introduzca el precio sin IVA");
 		precio = reader.nextDouble();
 		
 		//definimos la variable precioconiva
-		precioconiva = (precio * iva / 100) + precio;
+		precioConIva = (precio * IVA / 100) + precio;
 		
 		//mostramos los resultados al usuario
-		System.out.println("El precio total con IVA incluido es "+precioconiva+"");
+		System.out.println("El precio total con IVA incluido es "+precioConIva+"");
 		
 		//cerramos el scanner
 		reader.close();

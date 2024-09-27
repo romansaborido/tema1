@@ -10,23 +10,25 @@ public class Ejercicio12 {
 		Scanner reader = new Scanner(System.in);
 		
 		//creamos las variables 
-		double kgmanzanas;
-		double kgperas;
-		double importetotal;
+		double kgManzanas;
+		double kgPeras;
+		double importeTotal;
+		final double PRECIO_MANZANAS = 2.35;
+		final double PRECIO_PERAS = 1.95;
 		
 		//pedimos al usuario los kg de manzana que ha vendido este mes
 		System.out.println("Introduzca los kg de manzana que ha vendido este mes");
-		kgmanzanas = reader.nextDouble();
+		kgManzanas = reader.nextDouble();
 		
 		//pedimos al usuario los kg de pera que ha vendido este mes
 		System.out.println("Introduzca los kg de pera que ha vendido este mes");
-		kgperas = reader.nextDouble();
+		kgPeras = reader.nextDouble();
 		
 		//definimos la variable importetotal
-		importetotal = kgmanzanas * 2.35 + kgperas * 1.95;
+		importeTotal = kgManzanas * PRECIO_MANZANAS + kgPeras * PRECIO_PERAS;
 		
 		//mostramos al usuario el dinero total que ha generado en el mes con la venta de manazanas y peras
-		System.out.println("Importe total: "+importetotal+" €");
+		System.out.println("Importe total: "+importeTotal+" €");
 		
 		//cerramos el scanner
 		reader.close();
