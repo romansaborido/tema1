@@ -10,21 +10,22 @@ public class Ejercicio5 {
 		Scanner reader = new Scanner(System.in);
 		
 		//creamos las variables
-		double segundos;
-		double minutos;
-		double horas;
+		int segundos;
+		int minutos;
+		int horas;
+		int segundosFinales;
 		
 		//pedimos el número de segundos al usuario
 		System.out.println("Introduzca una cantidad de segundos");
-		segundos = reader.nextDouble();
+		segundos = reader.nextInt();
 		
 		//calculamos el número de minutos y horas
-		minutos = segundos / 60;
 		horas = segundos / 3600;
+		minutos = (segundos % 3600) / 60;
+		segundosFinales = segundos % 60; 
 		
 		//mostramos los resultados al usuario
-		System.out.println("Minutos: "+minutos+"");
-		System.out.println("Horas: "+horas+"");
+		System.out.println(""+horas+" horas, "+minutos+" minutos, "+segundosFinales+" segundos");
 		
 		//cerramos el scanner
 		reader.close();

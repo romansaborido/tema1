@@ -20,7 +20,7 @@ public class Ejercicio2 {
 		numero = reader.nextInt();
 		
 		//definimos el multiplo anterior y el multiplo siguiente
-		multiploAnterior = numero - numero%7;
+		multiploAnterior = numero - numero % 7;
 		multiploSiguiente = multiploAnterior + 7;
 		
 		//calculamos el resultado

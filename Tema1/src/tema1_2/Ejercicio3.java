@@ -25,11 +25,11 @@ public class Ejercicio3 {
 		numero2 = reader.nextInt();
 				
 		//definimos el multiplo anterior y el multiplo siguiente
-		multiploAnterior = numero1 - numero1%numero2;
+		multiploAnterior = numero1 - numero1 % numero2;
 		multiploSiguiente = multiploAnterior + numero2;
 				
 		//calculamos el resultado
-		resultado = multiploSiguiente - numero1;
+		resultado = multiploSiguiente - numero1 + numero2;
 				
 		//mostramos el resultado
 		System.out.println("Hay que sumarle "+resultado+" para que sea múltiplo de "+numero2+"");
