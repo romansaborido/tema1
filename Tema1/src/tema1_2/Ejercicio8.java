@@ -19,7 +19,7 @@ public class Ejercicio8 {
 		System.out.println("¿Cuántos metros ha recorrido tu lanzamiento?");
 		metros = reader.nextDouble();
 		
-		// Pasamos los metros a centímetros para calcular el rankingç
+		// Pasamos los metros a centímetros para calcular el ranking
 		centimetros = metros * 100;
 		
 		// Mostramos el resultado final sin decimales utilizando la conversión de tipos
